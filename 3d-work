@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Prime AI 3D Workspace</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head><body class="bg-black text-white overflow-hidden h-screen"><!-- BACKGROUND LAYERS (3D FEEL) --><div class="absolute inset-0">
+  <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-black to-purple-500/10"></div>
+  <div class="absolute inset-0 blur-3xl opacity-30 bg-cyan-500"></div>
+</div><!-- TOP BAR --><header class="relative z-10 flex items-center justify-between px-4 py-3 border-b border-white/10">  <div class="flex items-center gap-3"><!-- ARC REACTOR -->
+<div class="w-11 h-11 rounded-full border border-gray-400 flex items-center justify-center bg-black">
+  <div class="w-7 h-7 rounded-full border-2 border-gray-300 flex items-center justify-center">
+    <div class="w-3 h-3 rounded-full border border-gray-400"></div>
+  </div>
+</div>
+
+<div>
+  <h1 class="text-lg font-bold">Prime AI</h1>
+  <p class="text-xs text-gray-400">3D Workspace Interface</p>
+</div>
+
+  </div><button onclick="openSettings()" class="text-2xl">⋮</button>
+
+</header><!-- FLOATING CARDS (3D STYLE LAYERS) --><main class="relative z-10 p-4 space-y-4">  <div class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-xl transform hover:scale-[1.02] transition">
+    <p>Welcome to Prime 3D Workspace.</p>
+  </div>  <div class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-xl transform hover:scale-[1.02] transition">
+    <p>AI systems, memory, and future tools will appear here.</p>
+  </div></main><!-- FLOATING INPUT --><div class="fixed bottom-4 left-0 right-0 px-4 z-20">
+  <div class="bg-zinc-900 border border-white/10 rounded-full flex items-center gap-2 px-3 py-2"><button>+</button>
+
+<input class="flex-1 bg-transparent outline-none" placeholder="Ask Prime..." />
+
+<button>🎤</button>
+
+<button class="w-10 h-10 bg-white text-black rounded-full font-bold">➜</button>
+
+  </div>
+</div><!-- SETTINGS MODAL --><div id="modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50">  <div class="bg-zinc-900 border border-white/10 rounded-2xl p-5 w-[85%] max-w-md"><h2 class="text-xl font-bold mb-2">Prime v2</h2>
+<p class="text-sm text-gray-300 mb-4">
+  3D Workspace UI is active. Advanced features coming soon.
+</p>
+
+<button onclick="closeSettings()" class="w-full bg-white text-black py-2 rounded-xl font-bold">
+  Close
+</button>
+
+  </div></div><script>
+function openSettings(){
+  document.getElementById('modal').classList.remove('hidden');
+}
+
+function closeSettings(){
+  document.getElementById('modal').classList.add('hidden');
+}
+</script></body>
+</html>
